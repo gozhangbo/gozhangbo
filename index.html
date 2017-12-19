@@ -1,39 +1,91 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+<style>
+ .right
+{
+float:right;
+width:300px;
+font-size:20px;
+}
+  </style>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hello,World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="So I was feeling nostalgic.">
+    <link rel="canonical" href="http://alixedi.github.io/">
 
-<div class="home">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/pygments.css">
+</head>
+
+
+    <body>
+
+      <div class="container">
+
+        <div class="header">
+    <h1>
+        <a style="color: #000;" href="/">叶落知秋</a>
+    </h1>
+          <p class="rigth">-- by 张博</p>
+    <p class="sub">
+        滚滚长江东逝水，浪花淘尽英雄。是非成败转头空。
+    </p>
+
+    <div class="menu">
+        <ul class="navlist">
+            
+            <li>
+                <a class="page-link" href="./java">Java</a>
+            </li>
+            
+            <li>
+                <a class="page-link" href="./linux">Linux</a>
+            </li>
+            
+            <li>
+                <a class="page-link" href="./database">数据库</a>
+            </li>
+            
+            <li>
+                <a class="page-link" href="./life">生活</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+        <div class="home">
 
   <ul class="posts">
-    {% for post in paginator.posts %}
-    <li>
-      <h1 >{{ post.title }}</h1>
-      <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-      {{ post.excerpt }}
-      <div class="continue">
-        <a href="{{ post.url | prepend: site.baseurl }}">&bull;&bull;&bull;</a>
-      </div>
-    </li>
-    {% endfor %}
+    
   </ul>
 
   <div class="pagination">
-    {% if paginator.previous_page %}
-      {% if page == 2 %}
-        <a class="page-link" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">prv</a>
-      {% else %}
-        <a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">prv</a>
-      {% endif %}
-    {% else %}
+    
       <span class="page-link">prv</span>
-    {% endif %}
+    
 
-    {% if paginator.next_page %}
-      <a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">nxt</a>
-    {% else %}
+    
       <span class="page-link">nxt</span>
-    {% endif %}
+    
   </div>
 
 </div>
+
+
+        <footer class="site-footer">
+<a href="https://github.com/gozhangbo">My Github</a>
+</footer>
+
+
+      </div>
+
+    </body>
+</html>
