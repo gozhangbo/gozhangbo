@@ -8,10 +8,10 @@ body {
 .container {
   background: #ffe;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  margin: 100px auto 0;
-  max-width: 400px;
-  min-height: 300px;
-  padding: 200px;
+  margin: 20px auto 0;
+  max-width: 800px;
+  min-height: 500px;
+  padding: 100px;
   position: relative;
   width: 80%;
 }
@@ -49,6 +49,7 @@ a:link, a:visited, a:active, a:hover {
 /* menu */
 .page-link {
   font-weight: bold;
+  font-size: 30px;
 }
 
 a.page-link:hover {
@@ -116,8 +117,9 @@ h3 {
 
 /* footer */
 footer {
-  margin-top: 100px;
+  margin-top: 500px;
   text-align: center;
+  font-size: 30px;  
 }
 
 /* pagination */
