@@ -30,12 +30,13 @@
     <p class="sub" style="font-size: 20px">
         滚滚长江东逝水，浪花淘尽英雄。是非成败转头空。
     </p>
-	<br><br>
+            <h5 id="time" style="font-size: medium"></h5>
+            <br><br>
     <div class="menu">
         <ul class="navlist">
             
             <li>
-                <a class="page-link" href="/">Java</a>
+                <a class="page-link" href="/java">Java</a>
             </li>
             
             <li>
@@ -56,7 +57,7 @@
 <p style="font-size: 20px;text-align: center">望各位看官关注一波，精彩内容敬请期待。</p>
 
         <footer class="site-footer">
-<a href="https://github.com/gozhangbo">My Github</a>
+<a href="https://github.com/gozhangbo">-- My Github --</a>
 </footer>
 
 
@@ -64,3 +65,41 @@
 
     </body>
 </html>
+<script type="text/javascript">
+
+    window.onload = function () {
+        var time = document.getElementById("time");
+        setInterval(function() {
+            var date = new Date();
+            var year = date.getFullYear();
+            var month = date.getMonth() + 1;
+            var weekday = date.getDay();
+            if (weekday == '1')
+                weekday = '星期一';
+            else if (weekday == '2')
+                weekday = '星期二';
+            else if (weekday == '3')
+                weekday = '星期三';
+            else if (weekday == '4')
+                weekday = '星期四';
+            else if (weekday == '5')
+                weekday = '星期五';
+            else if (weekday == '6')
+                weekday = '星期六';
+            else if (weekday == '7')
+                weekday = '星期日';
+            var day = date.getDate();
+            var hour = date.getHours();
+            if (hour < 10)
+                hour = '0' + hour;
+            var minutes = date.getMinutes();
+            if (minutes < 10)
+                minutes = '0' + minutes;
+            var second = date.getSeconds();
+            if (second < 10)
+                second = '0' + second;
+            time.innerHTML = '当前时间为：' + year + '年 ' + month + '月 ' + day + '日 ' + weekday + '  '
+             + hour + ':' + minutes + ':' + second;
+        },1000);
+    }
+</script>

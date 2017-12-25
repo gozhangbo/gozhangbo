@@ -7,6 +7,15 @@
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>My Blog</title>
+        <description>&lt;p&gt;今天是我开始记录博客的日子，主要记录java，数据库等技术，希望大家多多交流，共同进步。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 25 Dec 2017 05:27:50 +0800</pubDate>
+        <link>http://localhost:4000/hello,world/2017/12/25/My-Blog/</link>
+        <guid isPermaLink="true">http://localhost:4000/hello,world/2017/12/25/My-Blog/</guid>
+      </item>
+    
+      <item>
         <title>Welcome to Jekyll!</title>
         <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
 To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;

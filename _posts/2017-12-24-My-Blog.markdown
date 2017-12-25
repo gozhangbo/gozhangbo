@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "My Blog"
+date:   2017-12-24 21:27:50
+categories: Hello,World
+---
+今天是我开始记录博客的日子，主要记录java，数据库等技术，希望大家多多交流，共同进步。
